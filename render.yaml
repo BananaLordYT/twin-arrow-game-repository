@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: twin-arrow-matchmaker
+    runtime: python
+    plan: free
+    buildCommand: pip install -r matchmaker/requirements.txt
+    startCommand: python matchmaker/server.py
